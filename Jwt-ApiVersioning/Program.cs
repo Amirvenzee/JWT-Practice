@@ -48,7 +48,7 @@ builder.Services.AddApiVersioning(options =>
 
 #region JWT
 
-var myKey = Encoding.UTF8.GetBytes("flkbgmboksbfbmbdf-fdbbfbSBDF-dfbbdaddafb-nflbnboibjr");
+var myKey = Encoding.ASCII.GetBytes("flkbgmboksbfbmbdf-fdbbfbSBDF-dfbbdaddafb-nflbnboibjr");
 
 builder.Services.AddAuthentication(x =>
 {

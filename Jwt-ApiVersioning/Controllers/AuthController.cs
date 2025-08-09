@@ -59,7 +59,7 @@ namespace Jwt_ApiVersioning.Controllers
             if (customer == null)
                 return NotFound();
             
-                var key = Encoding.UTF8.GetBytes("flkbgmboksbfbmbdf-fdbbfbSBDF-dfbbdaddafb-nflbnboibjr");
+                var key = Encoding.ASCII.GetBytes("flkbgmboksbfbmbdf-fdbbfbSBDF-dfbbdaddafb-nflbnboibjr");
 
                 var tokenHandler = new JwtSecurityTokenHandler();
                 var tokenDiscription = new SecurityTokenDescriptor()
